@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,9 +9,10 @@ import { MusicComponent } from './music/music.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { MusicPopupComponent } from './music-popup/music-popup.component';
-import { AdminPageComponent } from './admin-page/admin-page.component';
+
 import { HeaderComponent } from './header/header.component';
+
+
 
 
 @NgModule({
@@ -19,13 +22,14 @@ import { HeaderComponent } from './header/header.component';
     SocialMediaComponent,
     ContactInfoComponent,
     NavbarComponent,
-    MusicPopupComponent,
-    AdminPageComponent,
     HeaderComponent,
+    AppComponent,
+
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
