@@ -1,4 +1,4 @@
-#social-media-content {
+#social-media{
     flex: 1;
     height: fit-content;
     background-color: tra;
@@ -16,4 +16,8 @@
     cursor: pointer;
 }
 
+.soundcloud {
+    height: 48px;
+    width: 48px;
+}
 

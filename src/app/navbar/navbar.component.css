@@ -58,11 +58,8 @@
     align-items: center;
   }
   
-  .navbar-title {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+  .navbar-top-icon {
+    margin-left: 10px;
   }
   
   .navbar-menu {

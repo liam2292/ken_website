@@ -1,16 +1,18 @@
 <nav class="navbar">
-    <a href="#" class="navbar-title">DJ KEN</a>
-    <ul class="navbar-menu">
-      <li><a href="#" (click)="toggleContent()">MENU</a></li>
-    </ul>
-  </nav>
-  
-  <div id="menu-content" [ngClass]="{'hidden': isMenuHidden}">
-    <ul>
-      <li><a href="#">Home</a></li>
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">Social</a></li>
-    </ul>
-    
-  </div>
-  
+  <a href="#" (click)='scrollToHeader()' class="navbar-top-icon">
+    <img src="assets\images\turntable.png" alt="">
+  </a>
+  <ul class="navbar-menu">
+    <li><a href="#" (click)="toggleContent()">MENU</a></li>
+  </ul>
+</nav>
+
+<div id="menu-content" [ngClass]="{'hidden': isMenuHidden}">
+  <ul>
+    <li><a href="#" (click)='scrollToHeaderAndClose()' >Home</a></li>
+    <li><a href="#" (click)="scrollToContactInfoAndClose()">About Me</a></li>
+    <li><a href="#" (click)="scrollToSocialsAndClose()">Social</a></li>
+    <li><a href="#" (click)="scrollToSocialsAndClose()">Playlist</a></li>
+  </ul>
+
+</div>

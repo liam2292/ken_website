@@ -1,4 +1,4 @@
-#contact-info-content {
+#contact-info {
     height: fit-content;
     background-color: transparent;
     display: flex;
@@ -11,10 +11,27 @@
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 32px;
+    background-color: rgb(199, 177, 146);
+    border-radius: 20%;
+    padding: 8px 4px;
+}
+
+.about-me{
+    font-size: 25px;
+    text-align: center;
+    background-color: #98aeb6;
+    border-radius: 20px;
+    padding: 8px 2px;
+    width: 75%;
 }
 
 p {
-    font-size: 32px;
+    font-size: 25px;
     text-align: center;
+    background-color: #98aeb6;
+    border-radius: 20px;
+    padding: 8px 2px;
+    
+    width: 30%;
 }
