@@ -1,14 +1,15 @@
 .content {
-    margin-top: 100px;
-    padding: 20px;
-  }
+  margin-top: 100px;
+  padding: 20px;
+}
 
-  .hidden {
-    display: none;
-  }
 
-  #menu-content {
-    position: fixed;
+#menu-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,66 +17,106 @@
   background-color: black;
   color: white;
   z-index: 40;
-  }
+}
 
-  #menu-content ul {
-    list-style-type: none; /* Remove the default list-style */
-    padding: 0;
-    margin-top: 75px;
-  }
-  
-  #menu-content li {
-    margin-bottom: 10px;
-    position: relative;
-  }
-  
-  #menu-content li::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: max-content;
-    height: 2px;
-    background-color: white; /* Change this to the color you desire */
-  }
-  
-  #menu-content li a {
-    color: white;
-    font-size: 40px;
-    text-decoration: none;
-  }
-  
-  .navbar {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  
-    z-index: 50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar-top-icon {
-    margin-left: 10px;
-  }
-  
-  .navbar-menu {
-    list-style: none;
-    margin-right: 20px;
-    display: flex;
-    padding: 0;
-  }
-  
-  .navbar-menu li {
-    margin-left: 30px;
-  }
-  
-  .navbar-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-  }
-  
+#menu-content.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#menu-content ul {
+  list-style-type: none; /* Remove the default list-style */
+  padding: 0;
+  margin-top: 75px;
+}
+
+#menu-content li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#menu-content li::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: max-content;
+  height: 2px;
+  background-color: white; /* Change this to the color you desire */
+}
+
+#menu-content li a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-link {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-top-icon {
+  margin-left: 5px;
+}
+
+.ken-logo {
+  height: 5%;
+  width: 10%;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin-right: 20px;
+  display: flex;
+  padding: 0;
+}
+
+span {
+  position: absolute;
+  width: 35px;
+  height: 8px;
+  background-color: rgb(156,132,129);
+}
+
+span:first-child {
+  top: -15px;
+  right: 3px;
+}
+
+span:last-child {
+  top: 0px;
+  right: 3px;
+}
+
+.clickable-area {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.navbar-menu li {
+  margin-left: 30px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}

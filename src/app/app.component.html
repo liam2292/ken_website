@@ -1,20 +1,17 @@
 <nav class="navbar">
-  <app-navbar></app-navbar>
+  <app-navbar (navigateToSection)="scrollToSection($event)"></app-navbar>
 </nav>
 
-
-
-<header>
+<header id="header">
   <app-header></app-header>
 </header>
 
-
 <main>
-  <app-music></app-music>
-  <app-contact-info></app-contact-info>
-  
+  <app-music id="music"></app-music>
+  <app-contact-info id="contact"></app-contact-info>
 </main>
 
 <footer>
-  <app-social-media></app-social-media>
+  <app-social-media id="social"></app-social-media>
 </footer>
+

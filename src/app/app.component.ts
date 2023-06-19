@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'ken_website';
-  isMenuHidden: boolean = true;
+  @ViewChild('header') header!: ElementRef;
+  @ViewChild('music') music!: ElementRef;
+  @ViewChild('contact') contact!: ElementRef;
+  @ViewChild('social') social!: ElementRef;
 
-  toggleContent(): void {
-    this.isMenuHidden = !this.isMenuHidden;
+  scrollToSection(section: string): void {
+    const elementId = section;
+    const element = document.getElementById(elementId);
+  
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
+  
 }

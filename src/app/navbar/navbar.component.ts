@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,42 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
-  title: string = 'ken_website';
-  isMenuHidden: boolean = true;
+  @Output() navigateToSection: EventEmitter<string> = new EventEmitter<string>();
+  isMenuHidden = true;
 
   toggleContent(): void {
     this.isMenuHidden = !this.isMenuHidden;
   }
 
-  scrollToHeader() {
-    const header = document.getElementById('header');
-    if (header) {
-      header.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  scrollToHeaderAndClose() {
-    const header = document.getElementById('header');
-    if (header) {
-      header.scrollIntoView({ behavior: 'smooth' });
-    }
-    this.isMenuHidden = !this.isMenuHidden;
-  }
-
-  scrollToContactInfoAndClose() {
-    const contactInfo = document.getElementById('contact-info');
-    if (contactInfo) {
-      contactInfo.scrollIntoView({ behavior: 'smooth' });
-    }
-    this.isMenuHidden = !this.isMenuHidden;
-  }
-
-  scrollToSocialsAndClose() {
-    const socialMedia = document.getElementById('social-media');
-    if (socialMedia) {
-      socialMedia.scrollIntoView({ behavior: 'smooth' });
-    }
-    this.isMenuHidden = !this.isMenuHidden;
+  scrollToSection(section: string): void {
+    this.navigateToSection.emit(section);
+    this.isMenuHidden = true; // Close the menu after clicking on a section
   }
 }
