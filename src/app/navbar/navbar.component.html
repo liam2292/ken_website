@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <a href="#" class="navbar-title">DJ KEN</a>
+    <ul class="navbar-menu">
+      <li><a href="#" (click)="toggleContent()">MENU</a></li>
+    </ul>
+  </nav>
+  
+  <div id="menu-content" [ngClass]="{'hidden': isMenuHidden}">
+    <ul>
+      <li><a href="#">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Social</a></li>
+    </ul>
+    
+  </div>
+  

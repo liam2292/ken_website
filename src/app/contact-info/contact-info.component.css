@@ -1,0 +1,11 @@
+#contact-info-content {
+    height: 300px;
+    background-color: lightcoral;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+}

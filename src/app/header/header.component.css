@@ -1,0 +1,33 @@
+#header {
+    text-align: center;
+    height: 400px;
+    position: relative;
+  }
+
+  .header-title {
+    color: white;
+  }
+  
+  .listen-container {
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+  }
+
+  .listen-now-btn {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-scroll {
+    z-index: 30;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
+  }
