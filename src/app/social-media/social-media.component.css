@@ -1,7 +1,7 @@
 #social-media-content {
     flex: 1;
     height: fit-content;
-    background-color: transparent;
+    background-color: tra;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,9 +10,10 @@
 }
 
 .social-media-container {
-    height: 50px;
-    width: 100px;
-    background-color: white;
+    height: fit-content;
+    width: fit-content;
     margin: 20px 15px;
     cursor: pointer;
 }
+
+
