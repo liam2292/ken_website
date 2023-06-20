@@ -11,6 +11,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { HeaderComponent } from './header/header.component';
+import { PopupComponent } from './music/popup/popup.component';
 
 
 
@@ -24,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
     NavbarComponent,
     HeaderComponent,
     AppComponent,
+    PopupComponent,
 
 
   ],
