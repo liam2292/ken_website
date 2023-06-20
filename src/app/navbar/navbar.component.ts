@@ -17,4 +17,12 @@ export class NavbarComponent {
     this.navigateToSection.emit(section);
     this.isMenuHidden = true; // Close the menu after clicking on a section
   }
+
+  scrollToTopLogo() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  
 }

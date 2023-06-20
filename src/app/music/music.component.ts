@@ -13,6 +13,7 @@ export class MusicComponent {
   popupScNumerals: string[] = [];
   popupSoundcloudUrls: string ='';
 
+
   showPopup(index: number) {
     this.popupImageUrl = `assets/images/housewerk-${index + 1}.jpg`;
     this.popupSongNameNumerals = ['I','II', 'III', 'IV']
