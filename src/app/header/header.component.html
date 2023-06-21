@@ -1,6 +1,6 @@
 <div id="header">
-    <video id="header-video" autoplay loop muted>
-        <source src="assets/clips/ken_Clip_01.mp4?v=1" type="video/mp4">
+    <video id="header-video" autoplay loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="assets/clips/ken_Clip_01.mp4" type="video/mp4" >
     </video>
     <div class="content">
         
