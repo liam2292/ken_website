@@ -12,15 +12,15 @@
 
 h1 {
     font-size: 32px;
-    background-color: rgb(199, 177, 146);
-    border-radius: 20%;
-    padding: 8px 4px;
+    background-color: #789ba8;
+    border-radius: 20px;
+    padding: 8px 8px;
 }
 
 .about-me{
     font-size: 25px;
     text-align: center;
-    background-color: #98aeb6;
+    background-color: #789ba8;
     border-radius: 20px;
     padding: 8px 2px;
     width: 75%;
@@ -29,7 +29,7 @@ h1 {
 p {
     font-size: 25px;
     text-align: center;
-    background-color: #98aeb6;
+    background-color: #789ba8;
     border-radius: 20px;
     padding: 8px 2px;
     
